@@ -32,7 +32,7 @@ function cafe() {
       greeting = "Good Evening!";
   }
 
-  while (true) {
+  while (true) { //Return Statement, While Loop, Input-Output
       let answer = window.prompt(`${greeting} Which do you like?\n\nCoffee\nBread\nEclair`);
   
       if (answer === "Coffee") {
@@ -62,7 +62,7 @@ function showVisitCount() {
       visitCount = parseInt(storedVisitCount);
   }
 
-  for (let i = 0; i < 1; i++) {
+  for (let i = 0; i < 1; i++) { //For Loop:
       visitCount++;
   }
 
