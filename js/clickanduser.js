@@ -52,3 +52,24 @@ function cafe() {
 
 cafe();
 
+// visitor
+function showVisitCount() {
+  let visitCount = 0;
+
+  const storedVisitCount = localStorage.getItem('visitCount');
+
+  if (storedVisitCount) {
+      visitCount = parseInt(storedVisitCount);
+  }
+
+  for (let i = 0; i < 1; i++) {
+      visitCount++;
+  }
+
+  localStorage.setItem('visitCount', visitCount);
+
+  const counterElement = document.getElementById('counter');
+  counterElement.textContent = `You are the\n${visitCount} visitor.。`;
+}
+
+window.onload = showVisitCount;
